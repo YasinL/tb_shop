@@ -88,7 +88,7 @@ ITEM_PIPELINES = {
 }
 
 # 数据库配置
-MYSQL_HOST = "118.89.18.111"
+MYSQL_HOST = "127.0.0.1"
 MYSQL_PORT = 3306
 MYSQL_DBNAME = ""
 MYSQL_USER = ""
@@ -96,9 +96,9 @@ MYSQL_PASSWORD = ""
 
 # redis配置
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-REDIS_URL = 'redis://118.89.18.111:6380'
+REDIS_URL = 'redis://127.0.0.1:6379'
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
-REDIS_HOST = "118.89.18.111"
+REDIS_HOST = "127.0.0.1"
 REDIS_PORT = 6379
 SCHEDULER_PERSIST = True
 REDIS_DB_INDEX = 1
